@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindusthan Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("library.png");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            color: #2c3e50;
+            text-shadow: 2px 2px 4px #aaa;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #1f3c68;
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            text-align: center;
+        }
+
+        .chat-icon {
+            width: 80px;
+            height: 80px;
+            background-color: #3498db;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .chat-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .chat-icon img {
+            width: 50px;
+            height: 50px;
+        }
+
+        /* Chatbox Styles */
+        #chatbox {
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: none;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+
+        #chatbox ul {
+            list-style-type: none;
+            padding: 0;
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+
+        #chatbox ul li {
+            margin-bottom: 10px;
+        }
+
+        #chatbox input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .user-message {
+            text-align: right;
+            color: #3498db;
+        }
+
+        .bot-message {
+            text-align: left;
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO HINDUSTHAN LIBRARY</h1>
+    <p>LIBRARY ASSISTANT CHATBOT</p>
+    <div class="chat-icon" onclick="openChatbot()">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712105.png" alt="Bot Icon">
+    </div>
+
+    <div id="chatbox">
+        <ul id="chat-log"></ul>
+        <input type="text" id="user-input" placeholder="Type your message..." onkeydown="handleKeyDown(event)">
+    </div>
+
+    <script>
+       
+    </script>
+</body>
+</html>
